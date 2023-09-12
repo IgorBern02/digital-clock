@@ -35,8 +35,14 @@ body {
   width: 65%;
   height: 60%;
 
-  @media screen and (max-width: 640px) {
-    width: 80%;
+  @media screen and (max-width: 767px) {
+    width: 75%;
+    height: 70%;
+  } 
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 85%;
+    height: 80%;
   } 
 
   .dayText {
@@ -45,11 +51,16 @@ body {
 
     p {
       font-size: 2.5rem;
-    }
 
-    
+      @media screen and (max-width: 767px) {
+        font-size: 2.2rem;
+      } 
 
-    
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 2.3rem;
+      } 
+
+    }   
   }
 
   .time {
@@ -59,7 +70,9 @@ body {
     justify-content: center; 
     gap: 50px;
 
-   
+    @media screen and (max-width: 767px) {
+      gap: 20px;
+    }  
 
     .hours,.minutes,.seconds{
         width: 220px;
@@ -72,12 +85,39 @@ body {
         align-items: center;
         justify-content: center;
 
+        @media screen and (max-width: 420px) {
+          width: 30px;
+          height: 60px;
+        } 
+
+        @media screen and (max-width: 767px) {
+          width: 160px;
+          height: 190px;
+        } 
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+          width: 180px;
+          height: 215px;
+        } 
+
         p {
             font-size: 8rem;
+
+            @media screen and (max-width: 767px) {
+              font-size: 6rem;
+            } 
+
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+              font-size: 7rem ;
+            } 
           }
 
           span{
             font-size: 1.3rem;
+
+            @media screen and (max-width: 767px) {
+              font-size: 1.2rem;
+            }
           }
     }
 
@@ -94,6 +134,14 @@ body {
 
     p {
       font-size: 2.5rem;
+
+      @media screen and (max-width: 767px) {
+        font-size: 2.2rem;
+      } 
+
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 2.3rem;
+      } 
     }
   }
 }

@@ -32,9 +32,16 @@ body {
   width: 65%;
   height: 60%;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
   .container {
-    width: 80%;
+    width: 75%;
+    height: 70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 85%;
+    height: 80%;
   }
 }
 .container .dayText {
@@ -44,12 +51,27 @@ body {
 .container .dayText p {
   font-size: 2.5rem;
 }
+@media screen and (max-width: 767px) {
+  .container .dayText p {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container .dayText p {
+    font-size: 2.3rem;
+  }
+}
 .container .time {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  .container .time {
+    gap: 20px;
+  }
 }
 .container .time .hours, .container .time .minutes, .container .time .seconds {
   width: 220px;
@@ -62,11 +84,44 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 420px) {
+  .container .time .hours, .container .time .minutes, .container .time .seconds {
+    width: 30px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container .time .hours, .container .time .minutes, .container .time .seconds {
+    width: 160px;
+    height: 190px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container .time .hours, .container .time .minutes, .container .time .seconds {
+    width: 180px;
+    height: 215px;
+  }
+}
 .container .time .hours p, .container .time .minutes p, .container .time .seconds p {
   font-size: 8rem;
 }
+@media screen and (max-width: 767px) {
+  .container .time .hours p, .container .time .minutes p, .container .time .seconds p {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container .time .hours p, .container .time .minutes p, .container .time .seconds p {
+    font-size: 7rem;
+  }
+}
 .container .time .hours span, .container .time .minutes span, .container .time .seconds span {
   font-size: 1.3rem;
+}
+@media screen and (max-width: 767px) {
+  .container .time .hours span, .container .time .minutes span, .container .time .seconds span {
+    font-size: 1.2rem;
+  }
 }
 .container .date {
   position: absolute;
@@ -78,4 +133,14 @@ body {
 }
 .container .date p {
   font-size: 2.5rem;
+}
+@media screen and (max-width: 767px) {
+  .container .date p {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container .date p {
+    font-size: 2.3rem;
+  }
 }/*# sourceMappingURL=style.css.map */

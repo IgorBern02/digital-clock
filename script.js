@@ -12,8 +12,6 @@ setInterval(() => {
   hour.innerHTML = `${formatTime(hours)}`;
   min.innerHTML = `${formatTime(minutes)}`;
   sec.innerHTML = `${formatTime(seconds)}`;
-
-//   document.getElementById("hour").innerHTML = `${formatTime(hours)} : ${formatTime(minutes)} : ${formatTime(seconds)}`;  
 }, 1000);
 
 function formatTime(time) {
@@ -22,7 +20,7 @@ function formatTime(time) {
 
 //  Dias/Mês/Ano
 dayName = new Array ("domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
-monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
 
 var data = new Date();
 var dayText = String(dayName[data.getDay()]).padStart(2, "0");

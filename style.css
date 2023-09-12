@@ -32,6 +32,11 @@ body {
   width: 65%;
   height: 60%;
 }
+@media screen and (max-width: 640px) {
+  .container {
+    width: 80%;
+  }
+}
 .container .dayText {
   position: absolute;
   top: 0%;
